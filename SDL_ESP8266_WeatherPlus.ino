@@ -20,7 +20,7 @@
 
 
 // Change this to undef if you don't have the OLED present0
-#define OLED_Present
+#undef OLED_Present
 
 // BOF preprocessor bug prevent - insert on top of your arduino-code
 #if 1
@@ -1081,16 +1081,14 @@ void setup() {
   // test for SunAirPlus_Present
   SunAirPlus_Present = false;
 
-  LoadVoltage = SunAirPlus.getBusVoltage_V(OUTPUT_CHANNEL);
+  SunAirPlus_Present = scanAddressForI2CBus(INA3221_ADDRESS);
 
-  if (LoadVoltage < 0.1)
+  if (SunAirPlus_Present == false)
   {
-    SunAirPlus_Present = false;
     Serial.println("SunAirPlus Not Present");
   }
   else
   {
-    SunAirPlus_Present = true;
     Serial.println("SunAirPlus Present");
   }
 
