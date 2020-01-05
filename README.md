@@ -3,8 +3,28 @@ OurWeather Software for the SwitchDoc Labs Board WeatherPlus
 
 Arduino IDE software designed for the ESP8266 on the WeatherPlus Board and the OurWeather Weather Kit
 
-www.switchdoc.com
-March 2018 
+www.switchdoc.com<BR>
+August 2019 
+
+Current Version 036 - August 8, 2019
+
+- Added SHT30 support to OurWeather
+
+Current Version 035 - December 10, 2018
+
+- Added Blynk App support, Changed Air Quality Sensor to A0 of the ADC converter to match manual.
+
+Current Version 034 - September 28, 2018
+
+- Merged frightanic changes for WPS support.  Updated Version Number
+
+Current Version 033 - August 13, 2018
+
+- Update aREST.h to latest version.  Potential lock fix. 
+
+Current Version 032 - June 18, 2018
+
+- Address fix for ADS1115 and Air Quality Sensor
 
 Current Version 031 - March 30, 2018
 
